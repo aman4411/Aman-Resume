@@ -69,7 +69,7 @@ body{
 
 #about{
     height: auto;
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -87,15 +87,81 @@ body{
     box-shadow: 0px 0px 6px 4px white;
 }
 
-#about-heading{
- font-size: 30px;
-}
-
 #about-sub-heading{
     font-size: 16px;
+    width: 60%;
+    margin: auto;
 }
 
-#about-text p{
+#about-text{
     font-size: 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    
 }
 
+section{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: #f8f9fa;
+}
+
+.section-heading{
+    width: auto;
+    margin: 20px auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+}
+
+.section-heading span:hover{
+    color: orangered
+}
+
+.skills-display{
+    width: 70%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.skills-progress{
+    width: 300px;
+    height: 20px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px 4px darkgrey;
+    margin: 20px;
+    
+}
+
+.progress{
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.skill-name{
+    color: white;
+}
