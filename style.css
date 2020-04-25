@@ -4,8 +4,9 @@ body{
 
 /* Body Header */
 #body-header{
-    height: 65vh;
-    background-image: url(images/header-image.jpg);
+    height: 28rem;
+    /* background-image: url(images/header-image.jpg); */
+    background: linear-gradient(#2857a4,#403066);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -74,6 +75,7 @@ body{
 }
 
 #my-image{
+    position: relative;
     height: 12rem;
     width: 12rem;
     margin: auto;
@@ -164,4 +166,64 @@ section:nth-child(2n){
 
 .skill-name{
     color: white;
+}
+
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 1px solid black;
+}
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    margin: 5px;
+    border: 1px solid black;
+    left: 5%;
+    min-height: 150px;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-divider{
+    position: absolute;
+    width: 0;
+    height: 75%;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 50%;
+    transform: rotate(90deg);
+    z-index: 1;
+    color: purple;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -12.7%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: red;
+    z-index: 1;
 }
