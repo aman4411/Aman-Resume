@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+}
+
+/* Body Header */
+#body-header{
+    height: 65vh;
+    background-image: url(images/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Horizontal List */
+.horizontal-list{
+    list-style: none;
+    padding-left: 5px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 4px;
+    transition: 0.6s border-bottom 0.1s;
+}
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    
+}
+
+.nav-bar li:hover{
+    box-shadow: 0px 0px 6px 4px white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+#name-container{
+    margin-top: 80px;
+}
+
+/* Social Media Icons */
+.social-icons li a i{
+   font-size: 25px;
+   padding: 8px;
+   border-radius: 50%;
+   margin: -5px;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px white;
+}
+
+#domain{
+    color: white;
+}
+
+#about{
+    height: auto;
+    width: 70%;
+    margin: auto;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px white;
+}
+
+#about-heading{
+ font-size: 30px;
+}
+
+#about-sub-heading{
+    font-size: 16px;
+}
+
+#about-text p{
+    font-size: 20px;
+}
+
