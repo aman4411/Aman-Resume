@@ -29,7 +29,6 @@ body{
     color: white;
     text-decoration: none;
     font-size: 22px;
-    
 }
 
 .nav-bar li:hover{
@@ -171,16 +170,43 @@ section:nth-child(2n){
 .timeline{
     position: relative;
     width: 75%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .timeline-box{
     position: relative;
     width: 40%;
     margin: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     left: 5%;
     min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.timeline-box div{
+    margin-left: 20px;
+}
+
+.timeline-box div h1{
+    font-size: 22px;
+    margin: 10px 0px;
+    font-weight: 700;
+    color: orangered;
+}
+
+/* .timeline-box div h1{
+    content: " ";
+    background: url();
+} */
+
+.timeline-box div h2{
+    font-size: 18px;
+    margin: 10px 0px;
+    font-weight: 500;
+    color: #616161;
 }
 
 .timeline-box:nth-child(2n){
@@ -197,6 +223,7 @@ section:nth-child(2n){
 }
 
 .timeline-traveller{
+    font-size: 22px;
     position: sticky;
     top: 50%;
     transform: rotate(90deg);
@@ -226,4 +253,9 @@ section:nth-child(2n){
     height: 0.6rem;
     background-color: red;
     z-index: 1;
+}
+
+#contact{
+    background: linear-gradient(#2857a4,#403066);
+    height: 50vh;
 }
