@@ -235,11 +235,11 @@ section:nth-child(2n){
     content: " ";
     position: absolute;
     top: 50%;
-    right: -12.7%;
+    right: -13%;
     border-radius: 50%;
-    width: 0.6rem;
-    height: 0.6rem;
-    background-color: red;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: gray;
     z-index: 1;
 }
 
@@ -247,15 +247,58 @@ section:nth-child(2n){
     content: " ";
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: -9.5%;
     border-radius: 50%;
-    width: 0.6rem;
-    height: 0.6rem;
-    background-color: red;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: gray;
     z-index: 1;
 }
 
 #contact{
     background: linear-gradient(#2857a4,#403066);
-    height: 50vh;
+    
+}
+
+#contact span{
+    color: white;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-label{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contact-submit{
+    background-color: white;
+    color: #403066;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #403066;
+}
+
+.contact-input{
+    width: 250px;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#contact-submit{
+    width: 100px;
+    color: #403066;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    margin-bottom: 80px;
 }
